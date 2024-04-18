@@ -7,7 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./add-page.page.scss'],
 })
 export class AddPagePage implements OnInit {
-
+  nome: string ="";
+  cpf: string = "";
+  email: string = "";
+  senha: string = "";
+  nivel: string = "";
+  id: string = "0";
   constructor(private router:Router) { }
 
   ngOnInit() {
@@ -16,5 +21,15 @@ export class AddPagePage implements OnInit {
   addUsuario () {
     this.router.navigate(['usuarios']);
    }
+
+   cadastrar(){
+
+   }
+
+   editar(){
+
+   }
+  
+  
 
 }
